@@ -1,0 +1,86 @@
+@import './font';
+
+body {
+    display: block;
+    margin: 1rem;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.tests-table,
+.docs {
+    width: 100%;
+    border: 1px solid #c0c0c0;
+    border-collapse: collapse;
+    padding: 5px;
+
+    thead {
+        background-color: #e6efff;
+        font-weight: 500;
+    }
+
+    th,
+    td {
+        padding: 5px;
+        border: 1px solid #c0c0c0;
+    }
+
+    img,
+    svg {
+        width: 100px;
+    }
+
+    .test {
+        font-weight: 500;
+
+        &.passed {
+            background-color: #bcfbbf;
+        }
+        &.failed {
+            background-color: #fbbcbc;
+        }
+    }
+
+    .font-loading-test {
+        font-family: 'Montserrat';
+
+        .fw400 {
+            font-weight: 400;
+        }
+        .fw500 {
+            font-weight: 500;
+        }
+        .fw600 {
+            font-weight: 600;
+        }
+    }
+
+    #react-svg-orbital {
+        @keyframes spin {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        position: relative;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 100%;
+        transform-origin: center center;
+        animation: spin 11s linear infinite;
+    }
+}
+
+code {
+    background-color: #f3f3f3;
+    border-radius: 3px;
+    font-family: courier, monospace;
+    font-size: 90%;
+    padding: 0 3px;
+    margin: 0 2px
+}
+
+// Selector to test SCSS transpilation in the demo site
+#test-scss {
+    color: black;
+}

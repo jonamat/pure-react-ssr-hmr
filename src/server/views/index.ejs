@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+
+        <title>Pure server-side rendered React with hot module reloading</title>
+
+        <% if (typeof stylesheetFilename != "undefined") { %>
+        <link href="<%- stylesheetFilename %>" rel="stylesheet" />
+        <% } %>
+    </head>
+    <body>
+        <div id="root"><%- content %></div>
+    </body>
+
+    <% if (locals.data) { %>
+    <script>
+        window.data = <%- JSON.stringify(locals.data) %>
+    </script>
+    <% } %>
+
+    <script src="<%- clientBundleFilename %>"></script>
+</html>
