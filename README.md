@@ -1,6 +1,6 @@
 # pure-react-ssr-hmr
 
-Demo site: [http://pure-react-ssr-hmr.tk](http://pure-react-ssr-hmr.tk)
+Demo site: [https://pure-react-ssr-hmr.jonamat.cloud](https://pure-react-ssr-hmr.jonamat.cloud)
 
 Preconfigured template to develop SSR React apps in Typescript. It provides several features to speeding up your development workflow, using webpack hot modules replacement to track file changes. It also provides some tools to deal with the most popular developing practices, such as SCSS transpilation, static resources importing, code linting and more. The preconfigured Express server app provides runtime compression and minification, EJS rendering, optimizations according to the target environment and more.
 
@@ -55,7 +55,7 @@ If you need to execute a script that can be only executed from client side (fetc
 
 ## Links and credits
 Repository: [https://github.com/jonamat/pure-react-ssr-hmr](https://github.com/jonamat/pure-react-ssr-hmr)<br/>
-Demo site: [http://pure-react-ssr-hmr.tk](http://pure-react-ssr-hmr.tk)<br/>
+Demo site: [https://pure-react-ssr-hmr.jonamat.cloud](https://pure-react-ssr-hmr.jonamat.cloud)<br/>
 Real usage: [In progress](#)<br/>
 Why you should render React on the server side: [Link to the article](https://blog.logrocket.com/why-you-should-render-react-on-the-server-side-a50507163b79/#:~:text=SSR%20means%20there%20is%20no,SSR%20approach%20for%20their%20sites.)<br/>
 Inspiration: [yusinto/universal-hot-reload](https://github.com/yusinto/universal-hot-reload)
